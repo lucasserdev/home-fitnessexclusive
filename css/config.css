@@ -1,0 +1,179 @@
+/* CONFIG */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --roboto: "Roboto", sans-serif;
+    --dm-sans: "DM Sans", sans-serif;
+    --yellow-default: #FFD406;
+    --black: #000000;
+    --white: white;
+}
+
+.container-know-gym {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: var(--dm-sans);
+}
+
+.container-know-gym h1 {
+    margin-bottom: 10px;
+}
+
+.photos-infos {
+
+    display: flex;
+}
+
+.photo-carosel-photo {
+    flex: 1.5;
+    margin-right: 20px;
+    max-width: 700px;
+}
+
+.photo-carosel-photo .photo {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+
+.photo-carosel-photo .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.carosel-photo {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.carosel-photo #prevBtn, .carosel-photo #nextBtn {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 3px;
+
+    width: 40px;
+    height: 40px;
+}
+
+.carosel-photo #prevBtn:hover, .carosel-photo #nextBtn:hover  {
+    font-size: 31px;
+}
+
+.container-carosel {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+
+    width: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.carosel-photo .container-carosel img {
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.active {
+    border: 7px solid var(--yellow-default);
+
+}
+
+.infos {
+    flex: 1;
+    padding: 10px;
+}
+
+.infos .info {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+.infos .info .info-icon {
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+    color: #FFD406;
+}
+
+.info-txt h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.info-txt a {
+    display: block;
+    color: rgb(4, 4, 186);
+    margin: 10px 0;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-6px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+button.sub {
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: #c90404;
+    font-family: var(--dm-sans);
+    border: none;
+    color: white;
+    font-weight: 900;
+    animation: bounce 1s infinite;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+button.sub:hover {
+    background-color: #a90303;
+}
+
+@media (max-width: 790px) {
+    .photos-infos {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .container-know-gym {
+        width: 100%;
+    }
+
+    .photo-carosel-photo {
+        margin-right: 0;
+    }
+
+    .carosel-photo .container-carosel img {
+        width: 70px;
+    }
+
+    .infos .info .info-icon {
+        font-size: 24px;
+    }
+}
