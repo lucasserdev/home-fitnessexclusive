@@ -2,6 +2,11 @@
     <div class="logo">
         <a href="index.php"><img src="images/logo.jpeg" alt="logo-exclusive"></a>
     </div>
+    <div class="theme-mode">
+        <div class="ball-theme"></div>
+        <i class="bi bi-sun-fill"></i>
+        <i class="bi bi-moon-fill"></i>
+    </div>
     <div class="menu">
         <nav>
             <ul>

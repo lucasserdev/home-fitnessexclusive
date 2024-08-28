@@ -23,9 +23,9 @@
     
     <section class="search">
         <label for="gym">
-            Em qual unidade, cidade você deseja treinar?
+            Em qual cidade você deseja treinar?
         </label>
-        <input type="text" name="" id="gym" placeholder="Digite aqui a cidade"> 
+        <input type="text" name="" id="gym" placeholder="Digite aqui sua cidade ou bairro"> 
         <i class="bi bi-search" id="search"></i>
     </section>
 
@@ -35,7 +35,7 @@
 
     <!-- MODELO PARA GERAR UNIDADES -->
 
-    <div class="unit" data-city="" style="display: none;">
+    <div class="unit" data-city="" data-bairro="" style="display: none;">
         <img src="images/bg-fitness.jpg" alt="">
         <div class="info">
             <h4>-</h4>

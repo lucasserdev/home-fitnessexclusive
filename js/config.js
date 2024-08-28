@@ -2,6 +2,8 @@
 const unidade = document.title;
 const unidadeTitle = document.querySelector('.container-know-gym h1');
 unidadeTitle.innerHTML = unidade;
+const containerKnowGym = document.querySelector('.container-know-gym');
+const info = document.querySelectorAll('.infos .info');
 
 // CAROSSEL
 const containerCarosel = document.querySelector('.container-carosel');
@@ -29,4 +31,20 @@ prevBtn.addEventListener('click', () => {
 
 nextBtn.addEventListener('click', () => {
     containerCarosel.scrollLeft += scrollAmount;
+});
+
+ballTheme.addEventListener('click', () => {
+   if (body.classList.contains('dark-mode')) {
+    containerKnowGym.style.backgroundColor = 'black';
+    info.forEach((i) => {
+        i.style.border = '1px solid white';
+    });
+
+   } else {
+    containerKnowGym.style.backgroundColor = 'white';
+    info.forEach((i) => {
+        i.style.border = '1px solid rgba(0, 0, 0, 0.247)';
+    });
+
+   }
 });

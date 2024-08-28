@@ -1,5 +1,5 @@
 <footer>
-        <div class="container-footer">
+        <!-- <div class="container-footer">
             <div class="map-site">
                 <h5>Mapa do Site ></h1>
                 <a href="">
@@ -46,7 +46,7 @@
                     <a href="#"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="copyright">
             <p>© 2024 Fitness Exclusive. Todos os direitos reservados. | Desenvolvido por Setor X</p>
         </div>

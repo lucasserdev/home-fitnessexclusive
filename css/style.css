@@ -60,13 +60,65 @@ div.icon-whats a:hover {
 
 header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     padding: 0 20px;
+    
+    position: relative;
+}
+
+
+/*  THEME MODE  */
+
+.theme-mode {
+    width: 55px;
+    padding: 3px 5px;
+    border-radius: 20px;
+    background-color: black;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: white;
+
+    position: relative;
+}
+
+.theme-mode .ball-theme {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+
+    position: absolute;
 
     
+    top: 2px;
+    cursor: pointer;
+
+    transition: left 0.3s ease-in-out;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 450px) {
+    .theme-mode {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+    }
+}
+
+header .logo img {
+    width: 300px;
 }
 
 header .menu {
@@ -353,7 +405,6 @@ section.choose-gym .img-choose-gym button#gyms:hover {
 section.plans {
     padding-top: 20px;
     margin-top: 100px;
-    background-color:#F7F7F7;;
 }
 
 section.plans .container-plans {
@@ -592,10 +643,6 @@ section.insta .container-insta iframe {
     padding: 10px 0;
 }
 
-.ceos .ceo:first-child {
-    background-color: #F7F7F7;
-  }
-
 .ceos .bio-one, .ceos .bio-two {
     width: 80%;
     margin: 0 auto;
@@ -711,7 +758,6 @@ section.insta .container-insta iframe {
 
 .work-with-us {
     font-family: var(--dm-sans);
-    background-color: #F7F7F7;
     padding: 20px 0;
 }
 
@@ -733,7 +779,6 @@ section.insta .container-insta iframe {
     display: flex;
 
     margin-top: 30px;
-    background-color: #F7F7F7;
 }
 
 .txt-work, .img-work {
@@ -871,7 +916,6 @@ section.app {
 /* FOOTER */
 
 footer {
-    padding-top: 30px;
     font-family: var(--dm-sans);
 }
 
@@ -881,7 +925,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 30px;
-    background-color: white;
+    background-color: black;
 }
 
 .map-site {
