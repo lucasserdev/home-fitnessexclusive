@@ -57,15 +57,26 @@
                 <div class="input-filters">
 
                     <div class="select-filter">
-                        <input type="checkbox" name="" id="promo">
+                        <input type="checkbox" name="" id="promo" value="promocao">
                         <label for="promo">Promoção</label>
                     </div>
                     
                     <div class="select-filter">
-                        <input type="checkbox" name="" id="mc">
+                        <input type="checkbox" name="" id="mc" value="cadeira massageadora">
                         <label for="mc">Cadeira Massageadora</label>
                     </div>
 
+                    <div class="select-filter">
+                        <input type="checkbox" name="" id="fisio" value="fisioterapia">
+                        <label for="fisio">Fisioterapia</label>
+                    </div>
+
+                    <div class="select-filter">
+                        <input type="checkbox" name="" id="pila" value="pilates">
+                        <label for="pila">Pilates</label>
+                    </div>
+
+                    <button class="appy-filter">Filtrar</button>
                     
                 </div>
             </div>

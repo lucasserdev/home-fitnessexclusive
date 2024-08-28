@@ -33,38 +33,38 @@ btnCloseBurger.addEventListener('click', () => {
 });
 
 // Modificando o modo dark e light
-const ballTheme = document.querySelector('.ball-theme');
-ballTheme.style.left = '3px';
-ballTheme.addEventListener('click', () => {
-   if (ballTheme.style.left === '3px') {
-      ballTheme.style.left = '31px';
-      ballTheme.style.backgroundColor = 'black';
-      logo.src = 'images/logo-sem-fundo.png';
-      body.classList.add('dark-mode');
-      section.forEach((sec) => {
-         sec.classList.add('dark-mode');
-      });
-      menuA.forEach((a) => {
-         a.style.color = 'white';
-      });
-      themeMode.style.backgroundColor = 'white';
-      themeMode.style.color = 'black';
+// const ballTheme = document.querySelector('.ball-theme');
+// ballTheme.style.left = '3px';
+// ballTheme.addEventListener('click', () => {
+//    if (ballTheme.style.left === '3px') {
+//       ballTheme.style.left = '31px';
+//       ballTheme.style.backgroundColor = 'black';
+//       logo.src = 'images/logo-sem-fundo.png';
+//       body.classList.add('dark-mode');
+//       section.forEach((sec) => {
+//          sec.classList.add('dark-mode');
+//       });
+//       menuA.forEach((a) => {
+//          a.style.color = 'white';
+//       });
+//       themeMode.style.backgroundColor = 'white';
+//       themeMode.style.color = 'black';
       
-   } else {
-      ballTheme.style.left = '3px';
-      ballTheme.style.backgroundColor = 'white';
-      logo.src = 'images/logo.jpeg';
-      body.classList.remove('dark-mode');
-      section.forEach((sec) => {
-         sec.classList.remove('dark-mode');
-      });
-      menuA.forEach((a) => {
-         a.style.color = 'black';
-      });
-      themeMode.style.backgroundColor = 'black';
-      themeMode.style.color = 'white';
-   }
-});
+//    } else {
+//       ballTheme.style.left = '3px';
+//       ballTheme.style.backgroundColor = 'white';
+//       logo.src = 'images/logo.jpeg';
+//       body.classList.remove('dark-mode');
+//       section.forEach((sec) => {
+//          sec.classList.remove('dark-mode');
+//       });
+//       menuA.forEach((a) => {
+//          a.style.color = 'black';
+//       });
+//       themeMode.style.backgroundColor = 'black';
+//       themeMode.style.color = 'white';
+//    }
+// });
 
 
 

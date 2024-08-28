@@ -192,29 +192,19 @@ btnSearch.addEventListener('click', () => {
 });
 
 
-const openFilter = document.querySelector('.open-filter-mobile');
-const filters = document.querySelector('.filters');
-openFilter.addEventListener('click', () => {
-    if (filters.style.display == 'none') {
-        filters.style.display = 'flex';
-    } else {
-        filters.style.display = 'none';
-    }
+// FILTRANDO ACADEMIA PELOS FILTROS EXISTENTES
+
+const btnAppyFilter = document.querySelector('.appy-filter');
+btnAppyFilter.addEventListener('click', () => {
+   const checkboxes = document.querySelectorAll('.input-filters input[type="checkbox"]');
+
+   const checkedValues = Array.from(checkboxes).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
+
+   console.log(checkedValues);
 });
 
-const uni = document.querySelectorAll('.units .unit');
-ballTheme.addEventListener('click', () => {
-    uni.forEach((u) => {
-        if (body.classList.contains('dark-mode')) {
-            u.style.boxShadow = 'white 0px 0px 6px';
-        } else {
-            u.style.boxShadow = ' 0px 0px 6px 0px rgba(0, 0, 0, 0.5)';
-        }
-    });
-});
 
-// u.style.boxShadow = '1px 1px 1px white';
-// 0px 0px 6px 0px rgba(0, 0, 0, 0.5)
+
 
 
 

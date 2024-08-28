@@ -116,6 +116,25 @@ main.choose-units .container .filters .input-filters {
     padding-left: 10px;
 }
 
+button.appy-filter {
+    padding: 7px 20px;
+    background-color: #0075FF;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    margin: 15px auto;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--dm-sans);
+    font-weight: 900;
+    transition: background-color .4s ease;
+}
+
+button.appy-filter:hover {
+    cursor: pointer;
+    background-color: #015ec9;
+}
+
 main.choose-units .container .units {
     flex: 4;
     gap: 20px;
@@ -148,9 +167,13 @@ main.choose-units .container .units .unit .info {
 
 
 main.choose-units .container .units .unit .info a.see-gym {
-    color: rgb(4, 4, 186);
+    color: #0075FF;
     margin: 20px 0;
     display: block;
+}
+
+main.choose-units .container .units .unit .info a.see-gym:hover {
+    color: #0158bd;
 }
 
 main.choose-units .container .units .unit .info button.btn-plan {

@@ -33,18 +33,18 @@ nextBtn.addEventListener('click', () => {
     containerCarosel.scrollLeft += scrollAmount;
 });
 
-ballTheme.addEventListener('click', () => {
-   if (body.classList.contains('dark-mode')) {
-    containerKnowGym.style.backgroundColor = 'black';
-    info.forEach((i) => {
-        i.style.border = '1px solid white';
-    });
+// ballTheme.addEventListener('click', () => {
+//    if (body.classList.contains('dark-mode')) {
+//     containerKnowGym.style.backgroundColor = 'black';
+//     info.forEach((i) => {
+//         i.style.border = '1px solid white';
+//     });
 
-   } else {
-    containerKnowGym.style.backgroundColor = 'white';
-    info.forEach((i) => {
-        i.style.border = '1px solid rgba(0, 0, 0, 0.247)';
-    });
+//    } else {
+//     containerKnowGym.style.backgroundColor = 'white';
+//     info.forEach((i) => {
+//         i.style.border = '1px solid rgba(0, 0, 0, 0.247)';
+//     });
 
-   }
-});
+//    }
+// });
